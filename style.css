@@ -7,3 +7,20 @@
     width: 100%;
     height: 100%;
 }
+
+.btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #8C959D; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 10px; /* Скругляем уголки */
+    background-image: url('free-icon-vk-5968835.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+    font-size: 20px;
+    border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 115px;
+   }
