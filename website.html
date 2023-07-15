@@ -5,17 +5,28 @@
         <title>Парикмахерская "Mila"</title>
         <h1>Парикмахерская "Mila"</h1>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <img id="label" src="logo bright.jpg" alt="label">
     </head>
     <body>
-        <a href="https://vk.com/id797819931" class="btn">     перейти</a>
+        <canvas id="canvas" width="200" height="200" style="background-color:#333"></canvas>
+        <div id="controls">
+    <!--      Second hand proportions     -->
+          <div id="sh_size"></div> 
+     <!--     Second hand triangle base size    -->
+          <div id="sh_triangle"></div>
+        </div>
+        <script src="clock.js" ></script>
 
-        <div id="time-root"></div>
-        <img id="saloon" src="saloon.jpg" alt="label">
+        <ul class="list" type="circle">
+            <li>Галерея работ</li>
+            <li>Галерея салона</li>
+            <li>Юмор</li>
+            <li>Как до нас добраться</li>
+        </ul>
 
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<!--        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>-->
+        <a href="https://vk.com/id797819931" class="btn">перейти</a>
+
         <script src="time-root-react.js" ></script>
     </body>
     <footer>
