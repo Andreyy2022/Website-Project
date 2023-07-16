@@ -3,13 +3,12 @@
     height: 100px;
     border-radius: 100px;
 }
-/*
-#label-title {
-    width: 5px;
-    height: 5px;
-    border-radius: 100px;
+
+#saloon_photo {
+    width: 300%;
+    height: 300%;
 }
-*/
+
 h1 {
     font-size: 30pt;
 }
@@ -37,7 +36,7 @@ body {
     width: 115px;
    }
 
-   .list {
+   #list {
     text-align: left;
     font-size: 20pt;
     color: white;
