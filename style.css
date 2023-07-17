@@ -5,8 +5,8 @@
 }
 
 #saloon_photo {
-    width: 300%;
-    height: 300%;
+    width: auto;
+    height: auto;
 }
 
 h1 {
@@ -25,7 +25,7 @@ body {
     color: #fff; /* Белый цвет текста */
     padding: 1rem 1.5rem; /* Поля вокруг текста */
     text-decoration: none; /* Убираем подчёркивание */
-    border-radius: 10px; /* Скругляем уголки */
+    border-radius: 15px; /* Скругляем уголки */
     background-image: url('free-icon-vk-5968835.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,3 +59,4 @@ body {
     color: white;
     text-shadow: 3px 3px 3px #000;
     }
+
