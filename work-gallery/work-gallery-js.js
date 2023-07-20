@@ -1,17 +1,24 @@
-function ShowFolderFileList(folderspec)
-{
-  let fso, f, fc, s;
-  fso = new ActiveXObject('Scripting.FileSystemObject');
-  f = fso.GetFolder(folderspec);
-  fc = new Enumerator(f.files);
-  s = '';
-  for (; !fc.atEnd(); fc.moveNext())
-  {
-    s += fc.item();
-    s += '';
-  }
-  return(s);
+function createGallery(path){
+    var div = document.getElementById('gallery');
+    var counter = 1;
+    var img = document.createElement('img');
+    img.src = path + counter + '.jpeg';
+    img.onload = function(){loadImg(counter);}
+    img.onerror = function(){ this.parentNode.removeChild(this); return false}
+    function loadImg(counter){
+        var pic = document.createElement('img');
+        pic.src = path + counter + '.jpeg';
+        div.appendChild(pic);
+        img  = pic;
+        counter++;
+        img.onload = function(){
+            loadImg(counter)
+        }
+        img.onerror = function(){ 
+            this.parentNode.removeChild(this);
+        }
+    }
 }
-document.write(ShowFolderFileList('work-gallery-images'))
- 
-//console.log( ShowFolderFileList('work-gallery-images') );
+createGallery('work-gallery-images/Новая папка');
+
+//console.log(createGallery('work-gallery-images'));
