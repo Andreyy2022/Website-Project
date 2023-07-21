@@ -1,24 +1,23 @@
-function createGallery(path){
-    var div = document.getElementById('gallery');
-    var counter = 1;
-    var img = document.createElement('img');
-    img.src = path + counter + '.jpeg';
-    img.onload = function(){loadImg(counter);}
-    img.onerror = function(){ this.parentNode.removeChild(this); return false}
-    function loadImg(counter){
-        var pic = document.createElement('img');
-        pic.src = path + counter + '.jpeg';
-        div.appendChild(pic);
-        img  = pic;
-        counter++;
-        img.onload = function(){
-            loadImg(counter)
-        }
-        img.onerror = function(){ 
-            this.parentNode.removeChild(this);
-        }
-    }
+<?php
+$images = array();
+$folder = 'work-gallery-images';
+$array_to_js = 'var imgs=[';
+$all_files = scandir($folder);
+for ($i=2; $i<=sizeof($all_files)-1; $i++) {
+    $array_to_js.='"'.$folder.$all_files[$i].'",';
 }
-createGallery('work-gallery-images/Новая папка');
+echo substr($array_to_js,0,-1).'];';
+?>
 
-//console.log(createGallery('work-gallery-images'));
+var n = 0;
+var time = 800;
+play = setInterval("chgImg()", 3000);
+
+function chgImg() {
+$('#slide_show').fadeOut(time, function() {
+  $(this).attr('src', imgs[n]).fadeIn(time);
+});
+
+n++;
+if (n>=imgs.length) n = 0;
+}
