@@ -13,6 +13,11 @@ h1 {
     font-size: 30pt;
 }
 
+.top-sign-images {
+    display: flex;
+    justify-content: space-between;
+}
+
 body {
     background: url(saloon.jpg);
     background-repeat: no-repeat;
