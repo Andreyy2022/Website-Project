@@ -20,17 +20,20 @@ h1 {
 
 body {
     background: url(saloon.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #464646;
 }
 
 .btn {
-    display: inline-block; /* Строчно-блочный элемент */
-    background: #8C959D; /* Серый цвет фона */
-    color: #fff; /* Белый цвет текста */
-    padding: 1rem 1.5rem; /* Поля вокруг текста */
-    text-decoration: none; /* Убираем подчёркивание */
-    border-radius: 15px; /* Скругляем уголки */
+    display: inline-block; 
+    background: #8C959D; 
+    color: #fff; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none;
+    border-radius: 15px; 
     background-image: url('free-icon-vk-5968835.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -41,8 +44,9 @@ body {
     width: 115px;
    }
 
-   #list {
+   .list {
     text-align: left;
+    margin-top: 10%;
     font-size: 20pt;
     color: white;
     text-shadow: 3px 3px 3px #000;
