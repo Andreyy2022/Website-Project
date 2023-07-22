@@ -7,6 +7,7 @@
     </head>
     <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
         
         <div id="slide">
             <?php
@@ -17,7 +18,12 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function(){
-            $('#slide').cycle({fx:'scrollLeft', speed:1000, timeout:2000});
+                $('#slide').cycle({ 
+                    fx:      'scrollRight', 
+                    next:     '#right', 
+                    timeout:  0, 
+                    easing:  'easeInOutBack' 
+                });
             });
         </script>
         
