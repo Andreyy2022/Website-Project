@@ -3,12 +3,12 @@
     height: 100px;
     border-radius: 100px;
 }
-
-#saloon_photo {
-    width: auto;
+/*
+.saloon_photo {
+    width: 100%;
     height: auto;
 }
-
+*/
 h1 {
     font-size: 30pt;
 }
@@ -46,7 +46,6 @@ body {
 
    .list {
     text-align: left;
-    margin-top: 10%;
     font-size: 20pt;
     color: white;
     text-shadow: 3px 3px 3px #000;
