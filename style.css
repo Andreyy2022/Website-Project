@@ -9,13 +9,16 @@
     height: auto;
 }
 */
-h1 {
-    font-size: 30pt;
-}
-
 .top-sign-images {
     display: flex;
     justify-content: space-between;
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px #000;
 }
 
 body {
@@ -25,6 +28,13 @@ body {
     background-attachment: fixed;      
     background-size: cover;      
     background-color: #464646;
+}
+
+.list {
+    text-align: left;
+    font-size: 20pt;
+    color: white;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .btn {
@@ -44,20 +54,7 @@ body {
     width: 115px;
    }
 
-   .list {
-    text-align: left;
-    font-size: 20pt;
-    color: white;
-    text-shadow: 3px 3px 3px #000;
-   }
-
-   h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 3px 3px 3px #000;
-   }
-
-   footer {
+footer {
     position:fixed;
     left:0px;
     bottom:70px;
@@ -66,5 +63,5 @@ body {
     text-align: center;
     color: white;
     text-shadow: 3px 3px 3px #000;
-    }
+}
 
