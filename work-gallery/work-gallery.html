@@ -9,30 +9,6 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
-        
-        <div id="slide">
-            <?php
-            $folder = 'work-gallery-images/';
-            $all_files = scandir($folder);
-            for ($i=2; $i<=sizeof($all_files)-1; $i++) echo '<img src="'.$folder.$all_files[$i].'"/>';
-            ?>
-        </div>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('#slide').cycle({ 
-                    fx:      'scrollRight', 
-                    next:     '#right', 
-                    timeout:  0, 
-                    easing:  'easeInOutBack' 
-                });
-            });
-        </script>
-        
-<!--       <div style="height: 20px; text-align: center;">
-          <img src="work-gallery-images/-5345782971577257183_121_11zon.jpeg" alt="" id="slide_show">               
-        </div>
-        <script type="text/javascript" src="work-gallery-js.js"></script>    --> 
+        <script src="work-gallery-js.js"></script>
     </body>
 </html>
