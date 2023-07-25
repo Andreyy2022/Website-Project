@@ -10,10 +10,27 @@
         <link rel="stylesheet" type="text/css" href="saloon-photos-css.css">
     </head>
     <body>
-        <img src="IMG_20230716_161210.jpg" alt="фото салона" >
-        <img src="IMG_20230716_161221.jpg" alt="фото салона" >
-        <img src="IMG_20230716_161241.jpg" alt="фото салона" >
-        <img src="IMG_20230716_161255.jpg" alt="фото салона" >
+
+        <div id="big-photo"></div>
+
+        <img onclick="open_photo('IMG_20230716_161210.jpg')" class="photo" src="IMG_20230716_161210.jpg">
+        <img onclick="open_photo('IMG_20230716_161221.jpg')" class="photo" src="IMG_20230716_161221.jpg">
+        <img onclick="open_photo('IMG_20230716_161241.jpg')" class="photo" src="IMG_20230716_161241.jpg">
+        <img onclick="open_photo('IMG_20230716_161255.jpg')" class="photo" src="IMG_20230716_161255.jpg">
+
+        <p>Кликни на фото</p>
+        
+        <script>
+            function open_photo(photo) {
+            document.getElementById("big-photo").innerHTML =
+                ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
+            }
+
+            function close_photo() {
+            document.getElementById("big-photo").innerHTML = ""
+            }
+        </script>
+
     </body>
 </html>
 
