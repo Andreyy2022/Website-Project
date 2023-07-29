@@ -9,6 +9,27 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <script src="work-gallery-js.js"></script>
+
+        <div id="big-photo"></div>
+        
+        <script>
+            for (i = 1; i <= 5; i++) {
+                document.write(`<img onclick="open_photo('work-gallery-hairstyle/${i}.jpg')" class="photo" src="work-gallery-hairstyle/${i}.jpg" >`);
+            }
+        </script>
+
+        <p>Кликни на фото</p>
+        
+        <script>
+            function open_photo(photo) {
+            document.getElementById("big-photo").innerHTML =
+                ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
+            }
+
+            function close_photo() {
+            document.getElementById("big-photo").innerHTML = ""
+            }
+        </script>
+
     </body>
 </html>
