@@ -1,8 +1,16 @@
 body {
     background-color: gray;
+
+}
+
+.family-block {
     display: flex;
     margin: 7%;
     margin-top: 12%;
+}
+
+#back-button-container {
+    margin: 1%;
 }
 
 .family {

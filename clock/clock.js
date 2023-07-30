@@ -179,7 +179,7 @@ function drawTriangle(ctx, pos, length, width, offset, trianglebase) {
   
     ctx.rotate(-pos);
 }
-
+/*
  $( function() {
     $( "#sh_size" ).slider({
       range: true,
@@ -204,3 +204,4 @@ function drawTriangle(ctx, pos, length, width, offset, trianglebase) {
    });
    
   } );
+*/
