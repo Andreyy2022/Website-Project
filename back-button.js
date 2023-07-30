@@ -24,3 +24,16 @@ class LikeButton extends React.Component {
 const domContainer = document.querySelector('#back-button-container');
 const root = ReactDOM.createRoot(domContainer);
 root.render(e(LikeButton));
+/*
+
+let back = document.querySelector('#back-button-container');
+
+back.addEventListener('click', function() {
+  setTimeout()
+});
+*/
+/*
+function loadBack() {
+  location.href='../website.html';
+}
+*/

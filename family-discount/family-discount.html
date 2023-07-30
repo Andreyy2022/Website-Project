@@ -9,7 +9,12 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div id="back-button-container"></div>
+        <script>
+            function loadBack() {
+                location.href='../website.html';
+            }
+        </script>
+        <div id="back-button-container" onclick=" setTimeout(loadBack(), 3000); "></div>
 
         <div class="family-block">
             <img class="family" src="family_discount.jpg" alt="family" >
