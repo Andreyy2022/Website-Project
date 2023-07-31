@@ -1,5 +1,8 @@
 body {
     background-color: gray;
+}
+
+.body {
     display: flex;
     margin: 7%;
     margin-top: 8%;

@@ -1,0 +1,6 @@
+#back-button-container {
+    display: inline;
+    font-size: 15pt;
+    color: white;
+    box-shadow: 3px 3px 3px #000;
+}
