@@ -4,32 +4,39 @@
         <meta charset="utf-8">
         <title>Галерея работ</title>
         <link rel="stylesheet" type="text/css" href="work-gallery-css.css">
+        <link rel="stylesheet" type="text/css" href="../back-button/back-button-css.css">
 
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
+        <div id="back-button-container" onclick=" setTimeout(() => window.location.href='../website.html', 1200); "></div>
 
-        <div id="big-photo"></div>
-        
-        <script>
-            for (i = 1; i <= 5; i++) {
-                document.write(`<img onclick="open_photo('work-gallery-hairstyle/${i}.jpg')" class="photo" src="work-gallery-hairstyle/${i}.jpg" >`);
-            }
-        </script>
+        <div class="body">
+            <div id="big-photo"></div>
+            
+            <script>
+                for (i = 1; i <= 5; i++) {
+                    document.write(`<img onclick="open_photo('work-gallery-hairstyle/${i}.jpg')" class="photo" src="work-gallery-hairstyle/${i}.jpg" >`);
+                }
+            </script>
 
-        <p>Кликни на фото</p>
-        
-        <script>
-            function open_photo(photo) {
-            document.getElementById("big-photo").innerHTML =
-                ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
-            }
+            <p>Кликни на фото</p>
+            
+            <script>
+                function open_photo(photo) {
+                document.getElementById("big-photo").innerHTML =
+                    ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
+                }
 
-            function close_photo() {
-            document.getElementById("big-photo").innerHTML = ""
-            }
-        </script>
+                function close_photo() {
+                document.getElementById("big-photo").innerHTML = ""
+                }
+            </script>
+        </div>
 
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="../back-button/back-button-js.js"></script>
     </body>
 </html>

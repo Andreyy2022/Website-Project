@@ -2,6 +2,10 @@ body {
     background: grey;
 }
 
+.body {
+    margin: 10px;
+}
+
 .photo {
     width: 200px;
   }

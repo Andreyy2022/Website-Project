@@ -8,29 +8,36 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
         <link rel="stylesheet" type="text/css" href="saloon-photos-css.css">
+        <link rel="stylesheet" type="text/css" href="../back-button/back-button-css.css">
     </head>
     <body>
+        <div id="back-button-container" onclick=" setTimeout(() => window.location.href='../website.html', 1200); "></div>
 
-        <div id="big-photo"></div>
+        <div class="body">
+            <div id="big-photo"></div>
 
-        <img onclick="open_photo('IMG_20230716_161210.jpg')" class="photo" src="IMG_20230716_161210.jpg">
-        <img onclick="open_photo('IMG_20230716_161221.jpg')" class="photo" src="IMG_20230716_161221.jpg">
-        <img onclick="open_photo('IMG_20230716_161241.jpg')" class="photo" src="IMG_20230716_161241.jpg">
-        <img onclick="open_photo('IMG_20230716_161255.jpg')" class="photo" src="IMG_20230716_161255.jpg">
+            <img onclick="open_photo('IMG_20230716_161210.jpg')" class="photo" src="IMG_20230716_161210.jpg">
+            <img onclick="open_photo('IMG_20230716_161221.jpg')" class="photo" src="IMG_20230716_161221.jpg">
+            <img onclick="open_photo('IMG_20230716_161241.jpg')" class="photo" src="IMG_20230716_161241.jpg">
+            <img onclick="open_photo('IMG_20230716_161255.jpg')" class="photo" src="IMG_20230716_161255.jpg">
 
-        <p>Кликни на фото</p>
-        
-        <script>
-            function open_photo(photo) {
-            document.getElementById("big-photo").innerHTML =
-                ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
-            }
+            <p>Кликни на фото</p>
+            
+            <script>
+                function open_photo(photo) {
+                document.getElementById("big-photo").innerHTML =
+                    ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
+                }
 
-            function close_photo() {
-            document.getElementById("big-photo").innerHTML = ""
-            }
-        </script>
+                function close_photo() {
+                document.getElementById("big-photo").innerHTML = ""
+                }
+            </script>
+        </div>
 
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="../back-button/back-button-js.js"></script>
     </body>
 </html>
 
