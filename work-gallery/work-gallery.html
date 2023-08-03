@@ -10,13 +10,13 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div id="back-button-container" onclick=" setTimeout(() => window.location.href='../website.html', 1200); "></div>
+        <div id="back-button-container" onclick=" setTimeout(() => window.location.href='../website.html', 1000); "></div>
 
         <div class="body">
             <div id="big-photo"></div>
             
             <script>
-                for (i = 1; i <= 5; i++) {
+                for (i = 1; i <= 100; i++) {
                     document.write(`<img onclick="open_photo('work-gallery-hairstyle/${i}.jpg')" class="photo" src="work-gallery-hairstyle/${i}.jpg" >`);
                 }
             </script>
