@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="keywords" content="фото окрашиваний волос, фото стрижек, фото укладок, 
+        фото работ парикмахерской Мила, фото работ парикмахерской Mila, Новочебоксарск" >
+
         <title>Галерея работ</title>
         <link rel="stylesheet" type="text/css" href="work-gallery-css.css">
         <link rel="stylesheet" type="text/css" href="../back-button/back-button-css.css">
@@ -26,7 +28,12 @@
             <script>
                 function open_photo(photo) {
                 document.getElementById("big-photo").innerHTML =
-                    ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
+                    ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>");
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
                 }
 
                 function close_photo() {

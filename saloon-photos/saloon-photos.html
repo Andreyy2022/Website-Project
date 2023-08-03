@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="keywords" content="фото парикмахерской Мила, фото салона парикмахерской Мила, 
+        фото салона парикмахерской Mila, Новочебоксарск">
         <title>Галерея салона</title>
 
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -16,17 +17,22 @@
         <div class="body">
             <div id="big-photo"></div>
 
-            <img onclick="open_photo('IMG_20230716_161210.jpg')" class="photo" src="IMG_20230716_161210.jpg">
-            <img onclick="open_photo('IMG_20230716_161221.jpg')" class="photo" src="IMG_20230716_161221.jpg">
-            <img onclick="open_photo('IMG_20230716_161241.jpg')" class="photo" src="IMG_20230716_161241.jpg">
-            <img onclick="open_photo('IMG_20230716_161255.jpg')" class="photo" src="IMG_20230716_161255.jpg">
+            <img onclick="open_photo('IMG_20230716_161210.jpg')" class="photo" src="IMG_20230716_161210.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
+            <img onclick="open_photo('IMG_20230716_161221.jpg')" class="photo" src="IMG_20230716_161221.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
+            <img onclick="open_photo('IMG_20230716_161241.jpg')" class="photo" src="IMG_20230716_161241.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
+            <img onclick="open_photo('IMG_20230716_161255.jpg')" class="photo" src="IMG_20230716_161255.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
 
             <p>Кликни на фото</p>
             
             <script>
                 function open_photo(photo) {
                 document.getElementById("big-photo").innerHTML =
-                    ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>")
+                    ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>");
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
                 }
 
                 function close_photo() {
