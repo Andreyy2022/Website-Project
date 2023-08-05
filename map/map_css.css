@@ -15,3 +15,12 @@ body {
     color: white;
     text-shadow: 3px 3px 3px #000;
 }
+
+.way {
+    padding-left: 15%;
+    text-align: left;
+    font-size: 20pt;
+    color: white;
+    text-shadow: 3px 3px 3px #000;
+    text-align: center
+}
