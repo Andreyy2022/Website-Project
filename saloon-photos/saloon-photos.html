@@ -17,10 +17,10 @@
         <div class="body">
             <div id="big-photo"></div>
 
-            <img onclick="open_photo('IMG_20230716_161210.jpg')" class="photo" src="IMG_20230716_161210.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
-            <img onclick="open_photo('IMG_20230716_161221.jpg')" class="photo" src="IMG_20230716_161221.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
-            <img onclick="open_photo('IMG_20230716_161241.jpg')" class="photo" src="IMG_20230716_161241.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
-            <img onclick="open_photo('IMG_20230716_161255.jpg')" class="photo" src="IMG_20230716_161255.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
+            <img onclick="open_photo('saloon_1.jpg')" class="photo" src="saloon_1.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
+            <img onclick="open_photo('saloon_2.jpg')" class="photo" src="saloon_2.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
+            <img onclick="open_photo('saloon_3.jpg')" class="photo" src="saloon_3.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
+            <img onclick="open_photo('saloon_4.jpg')" class="photo" src="saloon_4.jpg" alt="Фото салона парикмахерской Мила в г. Новочебоксарск">
 
             <p>Кликни на фото</p>
             
@@ -28,11 +28,6 @@
                 function open_photo(photo) {
                 document.getElementById("big-photo").innerHTML =
                     ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>");
-                    window.scrollTo({
-                        top: 0,
-                        left: 0,
-                        behavior: 'smooth'
-                    });
                 }
 
                 function close_photo() {
