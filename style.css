@@ -25,7 +25,12 @@ body {
     background-color: #464646;
 }
 
-.list {
+.list-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list, p {
     text-align: left;
     font-size: 20pt;
     color: white;
