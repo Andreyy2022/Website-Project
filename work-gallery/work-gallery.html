@@ -29,11 +29,6 @@
                 function open_photo(photo) {
                 document.getElementById("big-photo").innerHTML =
                     ("<img onclick='close_photo()' class='result ' ' src='" + photo + "'>");
-                    window.scrollTo({
-                        top: 0,
-                        left: 0,
-                        behavior: 'smooth'
-                    });
                 }
 
                 function close_photo() {
