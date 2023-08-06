@@ -30,9 +30,16 @@ body {
     justify-content: space-between;
 }
 
-.list, p {
+.list {
     text-align: left;
     font-size: 20pt;
+    color: white;
+    text-shadow: 3px 3px 3px #000;
+}
+
+p {
+    text-align: left;
+    font-size: 18pt;
     color: white;
     text-shadow: 3px 3px 3px #000;
 }
