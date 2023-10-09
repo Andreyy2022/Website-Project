@@ -3,13 +3,21 @@ body {
 }
 
 .body {
+    padding-top: 3%;
     display: flex;
-    margin: 7%;
-    margin-top: 8%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.map {
+    padding-left: 2%;
+    text-align: left;
 }
 
 .bus {
-    padding-left: 15%;
+    padding-left: 6%;
     text-align: left;
     font-size: 20pt;
     color: white;
@@ -17,7 +25,7 @@ body {
 }
 
 .way {
-    padding-left: 15%;
+    padding-left: 6%;
     text-align: left;
     font-size: 20pt;
     color: white;
